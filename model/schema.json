@@ -1,0 +1,119 @@
+{
+  "model": "model_kelompok_5.joblib",
+  "simulation": true,
+  "features": [
+    "tenure",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod",
+    "MonthlyCharges",
+    "TotalCharges"
+  ],
+  "groups": {
+    "Profil & Kontrak Pelanggan": [
+      "tenure",
+      "Contract",
+      "PaperlessBilling",
+      "PaymentMethod"
+    ],
+    "Layanan Telepon & Internet": [
+      "PhoneService",
+      "MultipleLines",
+      "InternetService",
+      "OnlineSecurity",
+      "OnlineBackup",
+      "DeviceProtection",
+      "TechSupport",
+      "StreamingTV",
+      "StreamingMovies"
+    ],
+    "Informasi Tagihan ($)": [
+      "MonthlyCharges",
+      "TotalCharges"
+    ]
+  },
+  "numeric": {
+    "tenure": {
+      "min": 0.0,
+      "max": 72.0
+    },
+    "MonthlyCharges": {
+      "min": 18.4,
+      "max": 118.75
+    },
+    "TotalCharges": {
+      "min": 18.85,
+      "max": 8684.8
+    }
+  },
+  "categorical": {
+    "PhoneService": [
+      "No",
+      "Yes"
+    ],
+    "MultipleLines": [
+      "No",
+      "No phone service",
+      "Yes"
+    ],
+    "InternetService": [
+      "DSL",
+      "Fiber optic",
+      "No"
+    ],
+    "OnlineSecurity": [
+      "No",
+      "No internet service",
+      "Yes"
+    ],
+    "OnlineBackup": [
+      "No",
+      "No internet service",
+      "Yes"
+    ],
+    "DeviceProtection": [
+      "No",
+      "No internet service",
+      "Yes"
+    ],
+    "TechSupport": [
+      "No",
+      "No internet service",
+      "Yes"
+    ],
+    "StreamingTV": [
+      "No",
+      "No internet service",
+      "Yes"
+    ],
+    "StreamingMovies": [
+      "No",
+      "No internet service",
+      "Yes"
+    ],
+    "Contract": [
+      "Month-to-month",
+      "One year",
+      "Two year"
+    ],
+    "PaperlessBilling": [
+      "No",
+      "Yes"
+    ],
+    "PaymentMethod": [
+      "Bank transfer (automatic)",
+      "Credit card (automatic)",
+      "Electronic check",
+      "Mailed check"
+    ]
+  }
+}
