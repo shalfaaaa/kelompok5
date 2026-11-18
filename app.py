@@ -62,3 +62,4 @@ def predict(payload: PredictionInput):
         },
         "simulation": schema["simulation"],
     }
+
